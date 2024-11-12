@@ -1,0 +1,34 @@
+// This program calculates the average of grades for a student
+// By RawanWaleed
+#include <iostream>
+using namespace std;
+int main()
+{
+ // declaring variables
+    float Math,English,Arabic,French,average;
+    string StudentName;
+  cout << "Enter Student Name ";
+  cin >> StudentName;
+  cout << "Enter math grade ";
+  cin>> Math;
+  cout << "Enter english grade ";
+  cin>> English;
+  cout << "Enter arabic grade ";
+  cin>> Arabic;
+  cout << "Enter french grade ";
+  cin>> French; 
+// Processing
+   average= (Math+English+Arabic+French)/4;
+// Printing the Output
+     if (average>= 90)
+  cout<< StudentName << " average: " << average << " Grade A";
+     else if (average>= 80)
+  cout<< StudentName << " average: " << average << " Grade B";
+     else if (average>=70)
+  cout<< StudentName << " average: " << average << " Grade C";
+     else if (average>= 60)
+  cout<< StudentName << " average: " << average << " Grade D";
+     else 
+  cout<< StudentName << " average: " << average << " Grade F";
+return 0;
+}
